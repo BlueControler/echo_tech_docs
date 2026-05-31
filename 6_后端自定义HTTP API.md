@@ -1,6 +1,6 @@
 本文档维护后端暴露的自定义HTTP API，前端按需接入。
 
-## GET /adb/status
+## GET /adb/{deviceId}/status
 
 获取当前adb服务连接状态。
 
@@ -26,7 +26,7 @@ Request 无
 }
 ```
 
-## GET /system/status
+## GET /system/{deviceId}/status
 
 获取当前系统API服务连接状态。
 
@@ -50,7 +50,7 @@ Request 无
 }
 ```
 
-## GET /network/status
+## GET /network/{deviceId}/status
 
 查询网络状态。
 
@@ -70,7 +70,7 @@ Request 无
 }
 ```
 
-## POST /network/status
+## POST /network/{deviceId}/status
 
 更新网络状态。
 
@@ -84,4 +84,4 @@ Request
 
 Response
 
-成功同`GET /network/status`，失败很多，忽略就行。
+成功同`GET /network/{deviceId}/status`，失败很多，忽略就行。

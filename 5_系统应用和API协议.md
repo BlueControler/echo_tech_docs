@@ -1,8 +1,9 @@
 # Connection
 
-- URL: ws://localhost:port/system
+- URL: `ws://host:port/system/{deviceId}`
 - 建链方向：Agent模块（下称Server）主动建立并监听，系统工具模块（下称Client）进行连接
 - 消息格式：jsonl，每行一条 JSON
+- `deviceId`: 设备的唯一标识符，暂由APP端决定
 
 # Envelope
 
